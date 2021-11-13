@@ -1,0 +1,38 @@
+footer{
+  background: #343a40;
+  padding: 8px;
+  nav{
+    ul{
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+    a{
+      color: #adaeaf;
+      padding: .5rem;
+      display: flex;
+    }
+  }
+  .copyright{
+    a{
+      width: fit-content;
+      margin: 0 auto;
+      display: flex;
+      font-size: 1rem;
+      color: #fff;
+      padding-top: .3125rem;
+      padding-bottom: .3125rem;
+    }
+  }
+}
+
+@media screen and (max-width: 991px){
+  footer{
+    nav {
+      ul{
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}

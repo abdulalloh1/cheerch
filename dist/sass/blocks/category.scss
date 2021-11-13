@@ -1,0 +1,126 @@
+.category__page{
+  .section__title{
+    margin: 50px 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .filter{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sort_by_price{
+    width: 160px;
+  }
+  .sub_categories{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    a{
+      display: flex;
+      color: #000;
+      border: 1px solid #000;
+      border-radius: 5px;
+      padding: 5px 10px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      text-decoration: none;
+      transition: all .05s ease;
+    }
+  }
+  .custom-select{
+    display: inline-block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem 1.75rem .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    vertical-align: middle;
+    background: #fff url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center/8px 10px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  .input__price{
+    display: flex;
+    margin-left: auto;
+    input{
+      display: block;
+      width: 100%;
+      height: calc(1.5em + .75rem + 2px);
+      padding: .375rem .75rem;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #495057;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid #ced4da;
+      border-radius: .25rem;
+      transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+      margin-left: 15px;
+    }
+  }
+
+  .products{
+    margin-bottom: 30px;
+    .myRow{
+      width: calc(100% + 30px);
+      overflow: unset;
+      flex-wrap: wrap;
+      max-width: unset;
+    }
+    .theProduct{
+      width: 25%;
+    }
+  }
+}
+
+.related__products{
+  .section__title{
+    text-align: left;
+  }
+  .loadMore__btn{
+    display: flex;
+    width: fit-content;
+    margin: 10px auto 0;
+    cursor: pointer;
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    color: #2051bf;
+    text-align: center;
+    transition: all .1s ease;
+    i{
+      font-size: 17px;
+      margin-left: 5px;
+      color: #2051bf;
+    }
+  }
+}
+
+@media screen and (max-width: 991px){
+  .category__page{
+    .sort_by_price{
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    .input__price{
+      input{
+        &:first-child{
+          margin-left: 0;
+        }
+      }
+    }
+    .products{
+      margin-top: 30px;
+      .theProduct{
+        width: 50%;
+      }
+    }
+  }
+}
